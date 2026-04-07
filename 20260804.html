@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>🇮🇹 義大利自助旅遊 ｜ DAY 2 科莫湖一日遊</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#c4581a;
+  --green:#2a6b4a;
+  --gold:#b8902a;
+  --dark:#1a1a18;
+  --paper:#fdf8f2;
+  --light:#f5ede0;
+  --muted:#7a6a58;
+  --accent:#e8d5b7;
+  --red:#b03030;
+  --blue:#1a4a7a;
+  --teal:#1a6a6a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--paper);color:var(--dark);line-height:1.7}
+
+.cover{
+  background:linear-gradient(160deg,#050e1a 0%,#0a1e2a 40%,#0e2a35 70%,#1a1a18 100%);
+  color:#fff;padding:80px 40px 60px;text-align:center;position:relative;overflow:hidden;
+}
+.cover::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1400&q=80&fit=crop') center/cover no-repeat;
+  opacity:.22;
+}
+.cover-inner{position:relative;z-index:1;max-width:800px;margin:0 auto}
+.flag{font-size:56px;margin-bottom:12px}
+.cover h1{font-family:'Noto Serif TC',serif;font-size:clamp(26px,5vw,50px);font-weight:900;letter-spacing:.04em;line-height:1.2;margin-bottom:16px}
+.cover h1 span{color:var(--gold)}
+.cover-sub{font-size:16px;color:#a8d4d8;letter-spacing:.12em;margin-bottom:32px;font-weight:300}
+.cover-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:40px}
+.pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:6px 16px;border-radius:20px;font-size:13px;color:#f0e8d8}
+.cover-dates{border-top:1px solid rgba(255,255,255,.2);padding-top:24px;font-size:14px;color:#bba88a;letter-spacing:.08em}
+
+.section{max-width:860px;margin:0 auto;padding:48px 24px}
+.section-title{
+  font-family:'Noto Serif TC',serif;font-size:26px;font-weight:700;
+  color:var(--orange);display:flex;align-items:center;gap:10px;
+  margin-bottom:28px;padding-bottom:10px;border-bottom:2px solid var(--accent);
+}
+
+.overview-table{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:12px}
+.overview-table th{background:var(--dark);color:#f0e0c0;padding:10px 14px;text-align:left;font-weight:500;font-size:13px;letter-spacing:.06em}
+.overview-table td{padding:10px 14px;border-bottom:1px solid var(--accent);vertical-align:top}
+.overview-table tr:hover td{background:var(--light)}
+.tag{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;font-weight:500;margin:1px}
+.tag-train{background:#e8f0ff;color:#2a3a8a}
+.tag-boat{background:#d8f4f4;color:#0a4a5a}
+.tag-walk{background:#ddf5e8;color:#1a5a3a}
+.tag-eat{background:#ffe8e8;color:#8a2020}
+.tag-sight{background:#f0e8ff;color:#4a2a8a}
+.tag-cable{background:#fff0d8;color:#7a4a00}
+.tag-hotel{background:#e8f5e8;color:#2a5a2a}
+
+/* ── TOWN HEADER BANNER ── */
+.town-banner{
+  background:linear-gradient(90deg,#0a2a35,#0e3a45);
+  color:#fff;padding:14px 28px;margin:0 0 0;
+  display:flex;align-items:center;gap:12px;
+  border-radius:10px 10px 0 0;
+}
+.town-num{
+  background:var(--teal);color:#fff;
+  width:36px;height:36px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Noto Serif TC',serif;font-weight:900;font-size:16px;flex-shrink:0;
+}
+.town-banner h3{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:700}
+.town-banner p{font-size:12px;color:#8ad4d8;margin-top:2px}
+
+.day-block{background:#fff;border-radius:14px;box-shadow:0 2px 16px rgba(0,0,0,.07);margin-bottom:32px;overflow:hidden}
+.day-header{background:linear-gradient(90deg,#050e1a 0%,#0a2a35 100%);color:#fff;padding:20px 28px;display:flex;align-items:center;gap:14px;}
+.day-num{background:var(--teal);color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif TC',serif;font-weight:900;font-size:18px;flex-shrink:0;}
+.day-header-text h2{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:700;margin-bottom:2px}
+.day-header-text p{font-size:13px;color:#8ad4d8;letter-spacing:.06em}
+
+.timeline{padding:0 28px 28px}
+.tl-item{display:grid;grid-template-columns:90px 1fr;gap:0 20px;position:relative;padding:20px 0 4px;}
+.tl-item::before{content:'';position:absolute;left:89px;top:0;bottom:0;width:2px;background:var(--accent);}
+.tl-item:last-child::before{display:none}
+.tl-time{font-size:12px;color:var(--muted);font-weight:500;padding-top:4px;text-align:right;line-height:1.4;}
+.tl-dot{position:absolute;left:82px;top:24px;width:16px;height:16px;border-radius:50%;background:var(--orange);border:3px solid var(--paper);z-index:1;}
+.tl-dot.teal{background:var(--teal)}
+.tl-dot.green{background:var(--green)}
+.tl-dot.gold{background:var(--gold)}
+.tl-dot.red{background:var(--red)}
+.tl-dot.blue{background:var(--blue)}
+
+.tl-content{padding-left:4px}
+.tl-content h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--dark)}
+.tl-content h3 .icon{margin-right:6px}
+.tl-content p{font-size:13px;color:#4a3a2a;line-height:1.65;margin-bottom:6px}
+.tl-content .sub{font-size:12px;color:var(--muted);margin-top:4px}
+
+.tips{background:var(--light);border-left:3px solid var(--orange);border-radius:0 6px 6px 0;padding:8px 12px;margin:8px 0;font-size:12.5px;color:#4a3a28}
+.tips strong{color:var(--orange)}
+.tips-green{border-color:var(--green)}
+.tips-teal{border-color:var(--teal);background:#f0fafa}
+.tips-red{border-color:var(--red);background:#fff5f5}
+.tips-gold{border-color:var(--gold);background:#fdf8ee}
+.tips-blue{border-color:var(--blue);background:#f0f5ff}
+
+.tl-img-wrap{width:100%;height:180px;border-radius:8px;overflow:hidden;background:var(--light);margin:8px 0 12px;position:relative}
+.tl-img{width:100%;height:100%;object-fit:cover;display:block}
+.img-credit{position:absolute;bottom:5px;right:7px;font-size:10px;color:rgba(255,255,255,.8);background:rgba(0,0,0,.4);padding:2px 7px;border-radius:3px;pointer-events:none}
+
+.meal-card{background:linear-gradient(135deg,#fff8f0,#fff);border:1px solid var(--accent);border-radius:10px;padding:14px 16px;margin:10px 0}
+.meal-card .meal-title{font-weight:700;font-size:15px;color:var(--orange);margin-bottom:4px}
+.meal-card .meal-items{font-size:12.5px;color:#4a3a28;line-height:1.7}
+.meal-card .meal-price{font-size:11px;color:var(--muted);margin-top:5px}
+
+.transport{background:#f0f5ff;border:1px solid #c0d0ea;border-radius:8px;padding:10px 14px;margin:8px 0;font-size:12.5px}
+.transport .route{font-weight:700;color:var(--blue);font-size:13px;margin-bottom:4px}
+.transport ul{padding-left:16px;color:#2a3a5a}
+.transport ul li{margin-bottom:2px}
+
+.boat-card{background:linear-gradient(135deg,#f0fafa,#fff);border:1px solid #a0d4d8;border-radius:8px;padding:10px 14px;margin:8px 0;font-size:12.5px}
+.boat-card .route{font-weight:700;color:var(--teal);font-size:13px;margin-bottom:4px}
+
+.warn{background:linear-gradient(90deg,#fff0f0,#fff5f0);border:1px solid #e8b0a0;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:12.5px;color:#6a2010}
+.warn strong{color:var(--red)}
+
+.budget-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:14px;margin:16px 0}
+.budget-card{background:#fff;border:1px solid var(--accent);border-radius:10px;padding:16px;text-align:center}
+.budget-card .b-icon{font-size:28px;margin-bottom:6px}
+.budget-card .b-label{font-size:12px;color:var(--muted);margin-bottom:4px}
+.budget-card .b-amt{font-size:20px;font-weight:700;color:var(--orange);font-family:'Noto Serif TC',serif}
+.budget-card .b-note{font-size:11px;color:var(--muted);margin-top:2px}
+.budget-total{background:var(--dark);color:#f0e0c0;border-radius:10px;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.budget-total .label{font-size:14px;letter-spacing:.06em}
+.budget-total .amt{font-size:22px;font-weight:700;font-family:'Noto Serif TC',serif;color:var(--gold)}
+
+.tips-section{background:var(--light);border-radius:12px;padding:24px;margin-top:20px}
+.tips-section h3{font-family:'Noto Serif TC',serif;font-size:18px;color:var(--dark);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.tip-item{display:flex;gap:10px;margin-bottom:10px;font-size:13px;color:#3a2a18;align-items:flex-start}
+.tip-item .tip-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+
+footer{background:var(--dark);color:#8a7a6a;text-align:center;padding:24px;font-size:12px;letter-spacing:.06em}
+footer span{color:var(--gold)}
+
+@media(max-width:600px){
+  .tl-item{grid-template-columns:70px 1fr}
+  .tl-item::before{left:69px}
+  .tl-dot{left:62px}
+  .timeline{padding:0 16px 20px}
+  .day-header{padding:16px 18px}
+  .budget-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ COVER ═══ -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="flag">🇮🇹</div>
+    <h1>DAY 2 ｜ <span>科莫湖</span>一日遊</h1>
+    <p class="cover-sub">LAKE COMO ｜ Varenna → Bellagio → Como</p>
+    <div class="cover-pills">
+      <span class="pill">🚂 TRENORD 火車</span>
+      <span class="pill">⛴️ 科莫湖渡船</span>
+      <span class="pill">🚠 布倫納纜車</span>
+      <span class="pill">👵🏻 祖母×2 ｜ 👨‍👩‍👦 父母×2 ｜ 🎒 國中生×2</span>
+    </div>
+    <p class="cover-dates">2026年8月4日（週二）｜ 米蘭出發，當日來回</p>
+  </div>
+</div>
+
+<!-- ═══ OVERVIEW TABLE ═══ -->
+<div class="section">
+  <h2 class="section-title">📋 DAY 2 行程總覽</h2>
+  <table class="overview-table">
+    <thead>
+      <tr><th>時間</th><th>事項</th><th>地點 / 說明</th><th>類型</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>07:30前</td><td>🍳 早餐</td><td>飯店加購早餐（須提早用完）</td><td><span class="tag tag-eat">餐食</span></td></tr>
+      <tr><td>07:40–08:10</td><td>🚶 步行</td><td>飯店 → 米蘭中央車站</td><td><span class="tag tag-walk">步行</span></td></tr>
+      <tr><td>08:20–09:25</td><td>🚂 火車</td><td>Milano Centrale → Varenna-Esino（TRENORD 2820）</td><td><span class="tag tag-train">火車</span></td></tr>
+      <tr><td>09:25–10:50</td><td>🌊 瓦倫納</td><td>莫雷拉別墅、湖畔步道、碼頭</td><td><span class="tag tag-sight">景點</span></td></tr>
+      <tr><td>11:10–11:25</td><td>⛴️ 渡船</td><td>Varenna → Bellagio</td><td><span class="tag tag-boat">渡船</span></td></tr>
+      <tr><td>11:30–13:30</td><td>🥖 午餐</td><td>Mr. Panino 帕尼尼店（貝拉焦）</td><td><span class="tag tag-eat">餐食</span></td></tr>
+      <tr><td>13:30–15:30</td><td>🌸 貝拉焦</td><td>梅爾茲別墅、小鎮漫遊</td><td><span class="tag tag-sight">景點</span></td></tr>
+      <tr><td>15:50–16:40</td><td>⛴️ 渡船</td><td>Bellagio → Como</td><td><span class="tag tag-boat">渡船</span></td></tr>
+      <tr><td>16:40–17:45</td><td>🚠 纜車</td><td>布倫納纜車上下山</td><td><span class="tag tag-cable">纜車</span></td></tr>
+      <tr><td>18:00–19:30</td><td>⛪ 科莫市</td><td>老城散步 + 科莫大教堂</td><td><span class="tag tag-sight">景點</span></td></tr>
+      <tr><td>19:36–20:17</td><td>🚂 火車</td><td>Como S. Giovanni → Milano Centrale（TRENORD 25537）</td><td><span class="tag tag-train">火車</span></td></tr>
+      <tr><td>20:40–21:50</td><td>🥗 晚餐</td><td>Lei Poke Sushi Milano（夏威夷蓋飯）</td><td><span class="tag tag-eat">餐食</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ DAY 2 ═══ -->
+<div class="section" style="padding-top:0">
+<div class="day-block">
+  <div class="day-header">
+    <div class="day-num">2</div>
+    <div class="day-header-text">
+      <h2>DAY 2 ｜ 2026年8月4日（週二）</h2>
+      <p>🌊 米蘭出發，科莫湖 Varenna → Bellagio → Como 一日遊</p>
+    </div>
+  </div>
+  <div class="timeline">
+
+    <!-- 早餐 -->
+    <div class="tl-item">
+      <div class="tl-time">07:30前</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🍳</span>早餐 ｜ 飯店加購</h3>
+        <p>今天行程早，建議於 07:30 前在飯店用完早餐，輕裝出發。</p>
+        <div class="tips tips-gold">
+          <strong>💡 提示：</strong>今天行程全天在外，建議多帶一瓶水和輕便零食（科莫湖區物價較高）。祖母與孩子穿舒適球鞋，步道有坡度。
+        </div>
+      </div>
+    </div>
+
+    <!-- 步行到中央車站 -->
+    <div class="tl-item">
+      <div class="tl-time">07:40–<br>08:10</div>
+      <div class="tl-dot blue"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚶</span>飯店 → 米蘭中央車站（Milano Centrale）</h3>
+        <div class="transport">
+          <p class="route">🚇 建議路線：步行或搭地鐵M1紅線 Lima → 換乘至中央車站</p>
+          <ul>
+            <li>步行約 25–30 分鐘，或地鐵約 10 分鐘</li>
+            <li><strong>請提早抵達</strong>，先在車站完成今日所有票務</li>
+          </ul>
+        </div>
+        <div class="tips tips-blue">
+          <strong>🎫 今日票務一次處理：</strong><br>
+          ① 去程：Milano Centrale → Varenna-Esino（TRENORD 2820，08:20發）<br>
+          ② 回程：Como S. Giovanni → Milano Centrale（TRENORD 25537，19:36發）<br>
+          ③ 科莫湖渡船票（可現場碼頭購買，但人多時建議提前查詢）
+        </div>
+      </div>
+    </div>
+
+    <!-- 火車去程 -->
+    <div class="tl-item">
+      <div class="tl-time">08:20–<br>09:25</div>
+      <div class="tl-dot blue"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚂</span>火車 ｜ Milano Centrale → Varenna-Esino</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800&q=80&fit=crop"
+               data-wiki="Milano_Centrale_railway_station"
+               data-fallback="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800&q=80&fit=crop"
+               alt="米蘭中央車站 Milano Centrale"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <div class="transport">
+          <p class="route">🚂 TRENORD 2820｜直達｜車程約 1 小時 5 分</p>
+          <ul>
+            <li>08:20 從 Milano Centrale 發車</li>
+            <li>09:25 抵達 Varenna-Esino 車站</li>
+            <li>票價：約 <strong>€8–10 /人</strong>（建議提前在 Trenord App 或售票機購買）</li>
+          </ul>
+        </div>
+        <div class="tips tips-teal">
+          <strong>🌊 車窗風光：</strong>火車沿科莫湖東岸行駛，進入 Lecco 後即可看見湖景，讓孩子找好靠窗位置準備拍照！
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 鎮1：瓦倫納 ── -->
+    <div class="tl-item">
+      <div class="tl-time">09:25–<br>09:45</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🏘️</span>抵達 ｜ 瓦倫納（Varenna）</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80&fit=crop"
+               data-wiki="Varenna"
+               data-fallback="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=800&q=80&fit=crop"
+               alt="瓦倫納 Varenna 湖畔小鎮"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p>出站後沿標示步行下坡約 15 分鐘抵達鎮上湖邊與碼頭。瓦倫納是科莫湖東岸最迷人的漁村小鎮，彩色房屋倒映湖中，氣氛寧靜浪漫。</p>
+        <div class="tips tips-teal">
+          <strong>👟 下坡注意：</strong>從車站到鎮上是連續石板下坡路，祖母請小心慢行，可選擇抓緊扶手。
+        </div>
+      </div>
+    </div>
+
+    <!-- 瓦倫納景點 -->
+    <div class="tl-item">
+      <div class="tl-time">09:45–<br>10:50</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🌿</span>景點① ｜ 莫雷拉別墅 ＆ 湖畔步道</h3>
+
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1586878341523-7ebcb8bf7bb4?w=800&q=80&fit=crop"
+               data-wiki="Villa_Monastero"
+               data-fallback="https://images.unsplash.com/photo-1586878341523-7ebcb8bf7bb4?w=800&q=80&fit=crop"
+               alt="莫雷拉別墅 Villa Monastero 花園"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+
+        <p><strong>🏛️ 莫雷拉別墅（Villa Monastero）</strong>：前修道院改建的古老別墅，擁有沿湖延伸的壯觀植物花園，可俯瞰對岸貝拉焦半島。</p>
+        <div class="tips tips-green">
+          <strong>🎟️ 門票：</strong>花園入場約 €6–8/人，可視時間決定是否入內，外觀與湖景免費欣賞。
+        </div>
+
+        <p style="margin-top:10px"><strong>🚶 湖畔步道（Passeggiata degli Innamorati）</strong>：「戀人步道」是緊貼湖面、懸空建於岩壁上的紅色欄杆步道，科莫湖必走景點之一。</p>
+        <div class="tips tips-teal">
+          <strong>✨ 拍照推薦：</strong>步道中段有一個大紅心裝置，是拍照打卡熱點，建議全家在此合影留念！
+        </div>
+
+        <div class="tips tips-gold">
+          <strong>⚠️ 遺珠景點：</strong>瓦倫納古堡（Castello di Vezio）位於山丘頂，需爬坡約 30 分鐘，風景極佳但體力消耗較大。考量祖母與行程時間，本次跳過，有興趣的孩子可下次探索。
+        </div>
+      </div>
+    </div>
+
+    <!-- 等船 -->
+    <div class="tl-item">
+      <div class="tl-time">10:50–<br>11:10</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">⛴️</span>Varenna 碼頭 ｜ 買票、候船</h3>
+        <div class="boat-card">
+          <p class="route">⛴️ 渡船：Varenna → Bellagio</p>
+          <ul style="padding-left:16px;color:#0a4a5a">
+            <li>11:10 發船｜航程約 15 分鐘</li>
+            <li>票價：約 <strong>€5–7 /人</strong>（船票現場購買，現金/刷卡）</li>
+          </ul>
+        </div>
+        <div class="tips">
+          <strong>🚻 廁所：</strong>碼頭附近有公廁，上船前請全員如廁。
+        </div>
+      </div>
+    </div>
+
+    <!-- 渡船到貝拉焦 -->
+    <div class="tl-item">
+      <div class="tl-time">11:10–<br>11:25</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🛥️</span>渡船 ｜ Varenna → Bellagio</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80&fit=crop"
+               data-wiki="Lake_Como"
+               data-fallback="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80&fit=crop"
+               alt="科莫湖 Lake Como 渡船景色"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p>橫渡科莫湖中段，從東岸的瓦倫納到西岸的貝拉焦，船程約 15 分鐘。在船上可欣賞湖面的山色倒影，是難忘的體驗。</p>
+        <div class="tips tips-teal">
+          <strong>🌊 船上提醒：</strong>科莫湖夏季風浪不大，但老人小孩請抓好扶手。甲板上位子有限，建議早點上船卡位。
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 鎮2：貝拉焦 ── -->
+    <div class="tl-item">
+      <div class="tl-time">11:30–<br>13:30</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🥖</span>午餐 ｜ Mr. Panino（貝拉焦）</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&fit=crop"
+               data-wiki="Bellagio,_Lake_Como"
+               data-fallback="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&fit=crop"
+               alt="貝拉焦 Bellagio 科莫湖小鎮"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p>一抵達貝拉焦碼頭，<strong>先確認下一班 Bellagio → Como 的渡船時刻</strong>（直達船或普通船，票價與時間不同）。</p>
+        <div class="warn">
+          <strong>⚠️ 重要：</strong>到碼頭後立刻查看告示板確認「Bellagio → Como」的班次，記下 15:50 前後的船班時間，以免影響科莫市行程。
+        </div>
+        <div class="meal-card">
+          <p class="meal-title">🥖 Mr. Panino 推薦餐點</p>
+          <p class="meal-items">
+            🇮🇹 <strong>Bellagio</strong>：煙燻火腿、番茄、莫札瑞拉起司、九層塔<br>
+            🥩 <strong>Parma</strong>：帕瑪火腿、芝麻葉、莫札瑞拉起司<br>
+            🥩 <strong>Chiavenna</strong>：風乾牛肉（Bresaola）、奶油乳酪、芝麻葉
+          </p>
+          <p class="meal-price">💶 預估消費：每人約 €8–14 ｜ 6人合計 €50–85</p>
+        </div>
+        <div class="tips tips-gold">
+          <strong>✨ 文化補充：</strong>Bresaola（風乾牛肉）是倫巴底大區的特產，以紅葡萄酒和香料醃漬風乾，口感細嫩，是義大利北部最具代表性的冷盤之一。
+        </div>
+      </div>
+    </div>
+
+    <!-- 貝拉焦景點 -->
+    <div class="tl-item">
+      <div class="tl-time">13:30–<br>15:30</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🌸</span>景點② ｜ 貝拉焦小鎮 ＆ 梅爾茲別墅</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80&fit=crop"
+               data-wiki="Villa_Melzi"
+               data-fallback="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80&fit=crop"
+               alt="梅爾茲別墅 Villa Melzi 花園"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p><strong>🏘️ 貝拉焦小鎮：</strong>科莫湖最著名的小鎮，精品店、手工藝品店和咖啡館沿狹窄坡道而設，適合悠閒漫步。湖邊有絕佳的拍照視角。</p>
+        <p style="margin-top:8px"><strong>🌺 梅爾茲別墅（Villa Melzi）：</strong>建於1808年的新古典主義別墅，擁有義大利最美麗的湖畔花園之一，滿植茶花、日本楓樹與睡蓮。</p>
+        <div class="tips tips-green">
+          <strong>🎟️ Villa Melzi：</strong>門票約 €8/人，建議對花園有興趣者入內，其他人可在湖畔漫步等候。
+        </div>
+        <div class="tips tips-teal">
+          <strong>🧊 貼心建議：</strong>貝拉焦夏季人潮多，建議午後早點逛完景點，15:30前就往碼頭移動，預留充裕時間等船。
+        </div>
+      </div>
+    </div>
+
+    <!-- 等船到Como -->
+    <div class="tl-item">
+      <div class="tl-time">15:30–<br>15:50</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">⛴️</span>Bellagio 碼頭 ｜ 買票、候船</h3>
+        <div class="boat-card">
+          <p class="route">⛴️ 渡船：Bellagio → Como</p>
+          <ul style="padding-left:16px;color:#0a4a5a">
+            <li>15:50 發船｜航程約 50 分鐘（普通船）</li>
+            <li>快船（Hydrofoil）約 20–30 分鐘，票價較高</li>
+            <li>票價：普通船約 <strong>€8–12 /人</strong></li>
+          </ul>
+        </div>
+        <div class="tips">
+          <strong>🚻 廁所：</strong>碼頭附近有公廁，上船前請全員如廁。
+        </div>
+      </div>
+    </div>
+
+    <!-- 渡船到Como -->
+    <div class="tl-item">
+      <div class="tl-time">15:50–<br>16:40</div>
+      <div class="tl-dot teal"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🛥️</span>渡船 ｜ Bellagio → Como</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&fit=crop"
+               data-wiki="Como"
+               data-fallback="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&fit=crop"
+               alt="科莫市 Como 湖畔城市景色"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p>從湖中央的貝拉焦渡船至科莫市，沿途經過湖岸山村、豪華別墅與茂密林木，是全天最長的船程，也是最美的湖景體驗。</p>
+        <div class="tips tips-teal">
+          <strong>🌄 提示：</strong>下午陽光從西方照入，坐在右側（面向前進方向）可拍到更好的湖岸光線。
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 鎮3：科莫市 ── -->
+    <div class="tl-item">
+      <div class="tl-time">16:40–<br>17:45</div>
+      <div class="tl-dot orange"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚠</span>景點③ ｜ 布倫納纜車（Funicolare Como-Brunate）</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1567436011739-5a6f6abd7f1b?w=800&q=80&fit=crop"
+               data-wiki="Como–Brunate_funicular"
+               data-fallback="https://images.unsplash.com/photo-1567436011739-5a6f6abd7f1b?w=800&q=80&fit=crop"
+               alt="布倫納纜車 Funicolare Como-Brunate"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p>抵達科莫湖畔後，步行約 15 分鐘前往纜車站。纜車單程約 7 分鐘，抵達山上的 Brunate 村，可俯瞰整個科莫湖的壯麗景色。</p>
+        <div class="transport">
+          <p class="route">🚠 纜車站地址：Piazza Alcide De Gasperi 4, Como</p>
+          <ul>
+            <li>單程票：約 <strong>€4 /人</strong>｜來回：約 €6.5 /人</li>
+            <li>班距：每 30 分鐘一班，約 07:00–22:30</li>
+            <li>簡單看景後即下山，不需停留太久</li>
+          </ul>
+        </div>
+        <div class="tips tips-teal">
+          <strong>🌅 拍照推薦：</strong>山頂的觀景台可以看到科莫湖 Y 字形的壯觀全景，傍晚時分光線柔和，是難得的攝影機會。
+        </div>
+      </div>
+    </div>
+
+    <!-- 科莫老城 -->
+    <div class="tl-item">
+      <div class="tl-time">18:00–<br>19:30</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h3><span class="icon">⛪</span>景點④ ｜ 科莫老城 ＆ 科莫大教堂</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img wiki-img"
+               src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&q=80&fit=crop"
+               data-wiki="Como_Cathedral"
+               data-fallback="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&q=80&fit=crop"
+               alt="科莫大教堂 Duomo di Como 外觀"
+               loading="lazy">
+          <span class="img-credit">© Wikipedia / Unsplash</span>
+        </div>
+        <p><strong>🏛️ 科莫大教堂（Duomo di Como）：</strong>建於1396年的哥德式大教堂，融合文藝復興風格，外觀有精細的大理石雕刻，內部有精美彩繪玻璃窗。</p>
+        <div class="tips tips-green">
+          <strong>📍 周邊漫步：</strong>教堂廣場周邊有科莫老城的精品絲綢店（科莫是義大利絲綢之都），可順路瀏覽，不購買也值得欣賞。
+        </div>
+        <div class="tips tips-gold">
+          <strong>✨ 文化補充：</strong>科莫自古以來以生產高品質絲綢著稱，義大利著名時裝品牌（如 Ermenegildo Zegna、Versace）的面料都在此地製作。可和孩子聊聊全球化供應鏈的有趣故事！
+        </div>
+      </div>
+    </div>
+
+    <!-- 前往車站 -->
+    <div class="tl-item">
+      <div class="tl-time">19:10–<br>19:30</div>
+      <div class="tl-dot blue"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚶</span>前往 ｜ Como S. Giovanni 車站</h3>
+        <div class="transport">
+          <p class="route">🚶 步行：科莫老城 → Como S. Giovanni 車站（約 10–15 分鐘）</p>
+          <ul>
+            <li>注意：科莫有兩個車站，搭火車回米蘭要去 <strong>Como San Giovanni</strong>，不是 Como Lago</li>
+          </ul>
+        </div>
+        <div class="warn">
+          <strong>⚠️ 車站勿搞錯！</strong>Como Lago（科莫湖站）是另一條線，回米蘭中央車站需搭 <strong>Como S. Giovanni</strong> 的 TRENORD 火車。
+        </div>
+      </div>
+    </div>
+
+    <!-- 回程火車 -->
+    <div class="tl-item">
+      <div class="tl-time">19:36–<br>20:17</div>
+      <div class="tl-dot blue"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚂</span>火車 ｜ Como S. Giovanni → Milano Centrale</h3>
+        <div class="transport">
+          <p class="route">🚂 TRENORD 25537｜直達｜車程約 41 分鐘</p>
+          <ul>
+            <li>19:36 從 Como San Giovanni 發車</li>
+            <li>20:17 抵達 Milano Centrale</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 步行到餐廳 -->
+    <div class="tl-item">
+      <div class="tl-time">20:20–<br>20:40</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🚶</span>步行 ｜ 中央車站 → 晚餐餐廳</h3>
+        <p>從米蘭中央車站步行約 15–20 分鐘至餐廳，享用一天後輕食晚餐。</p>
+      </div>
+    </div>
+
+    <!-- 晚餐 -->
+    <div class="tl-item">
+      <div class="tl-time">20:40–<br>21:50</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🥗</span>晚餐 ｜ Lei Poke Sushi Milano</h3>
+        <div class="tl-img-wrap">
+          <img class="tl-img"
+               src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80&fit=crop"
+               alt="夏威夷蓋飯 Poke Bowl"
+               loading="lazy"
+               onerror="this.src='https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80'">
+          <span class="img-credit">© Unsplash</span>
+        </div>
+        <p>走了一整天的湖畔步道，今晚選擇清爽的夏威夷蓋飯（Poke Bowl）作為晚餐，輕食、健康、適合全家。</p>
+        <div class="meal-card">
+          <p class="meal-title">🥗 推薦品項</p>
+          <p class="meal-items">
+            🍣 <strong>Salmon Poke Bowl</strong>（鮭魚夏威夷蓋飯）— 主推<br>
+            🥑 搭配酪梨、毛豆、海藻等豐富配料
+          </p>
+          <p class="meal-price">💶 預估消費：每人約 €12–16 ｜ 6人合計 €72–96</p>
+        </div>
+        <div class="tips tips-green">
+          <strong>🛏️ 回飯店提醒：</strong>今晚返飯店後，明天（DAY3）將退房！請在睡前完成所有<strong>行李打包</strong>，明早早起直接退房出發。
+        </div>
+      </div>
+    </div>
+
+    <!-- 返回飯店 -->
+    <div class="tl-item">
+      <div class="tl-time">21:50–<br>22:00</div>
+      <div class="tl-dot green"></div>
+      <div class="tl-content">
+        <h3><span class="icon">🛏️</span>返回飯店 ｜ Best Western Hotel City</h3>
+        <div class="transport">
+          <p class="route">🚶 從餐廳步行回飯店，約 5–10 分鐘</p>
+        </div>
+        <div class="tips tips-gold">
+          <strong>⚠️ 睡前必做：</strong>明天 DAY3 將退房，今晚請完成所有行李打包，護照、票券、充電器等重要物品集中放好。
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+</div><!-- /day-block -->
+</div>
+
+<!-- ═══ BUDGET ═══ -->
+<div class="section" style="padding-top:0">
+  <h2 class="section-title">💶 DAY 2 預算估算（6人）</h2>
+  <div class="budget-grid">
+    <div class="budget-card">
+      <div class="b-icon">🚂</div>
+      <div class="b-label">TRENORD 火車（來回×6人）</div>
+      <div class="b-amt">~€108</div>
+      <div class="b-note">約 €9/人×2趟</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">⛴️</div>
+      <div class="b-label">渡船票（2段×6人）</div>
+      <div class="b-amt">~€90</div>
+      <div class="b-note">Varenna→Bellagio + Bellagio→Como</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🚠</div>
+      <div class="b-label">布倫納纜車（來回×6人）</div>
+      <div class="b-amt">~€39</div>
+      <div class="b-note">€6.5/人來回</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🌿</div>
+      <div class="b-label">Villa Monastero（選購）</div>
+      <div class="b-amt">~€42</div>
+      <div class="b-note">€7/人</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🌸</div>
+      <div class="b-label">Villa Melzi（選購）</div>
+      <div class="b-amt">~€48</div>
+      <div class="b-note">€8/人</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🥖</div>
+      <div class="b-label">午餐（Mr. Panino）</div>
+      <div class="b-amt">~€66</div>
+      <div class="b-note">€11/人</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🥗</div>
+      <div class="b-label">晚餐（Lei Poke Sushi）</div>
+      <div class="b-amt">~€84</div>
+      <div class="b-note">€14/人</div>
+    </div>
+    <div class="budget-card">
+      <div class="b-icon">🍦</div>
+      <div class="b-label">冰淇淋 / 咖啡零食</div>
+      <div class="b-amt">~€36</div>
+      <div class="b-note">€6/人</div>
+    </div>
+  </div>
+  <div class="budget-total">
+    <span class="label">DAY 2 每人預估合計</span>
+    <span class="amt">€85–100 /人</span>
+  </div>
+  <p style="font-size:12px;color:var(--muted);margin-top:8px;text-align:right">※ 別墅門票可依興趣選擇，渡船費依選擇快船或慢船而異。€1 ≈ NT$35</p>
+</div>
+
+<!-- ═══ TIPS ═══ -->
+<div class="section" style="padding-top:0">
+  <h2 class="section-title">🌊 科莫湖行旅注意事項</h2>
+  <div class="tips-section">
+    <h3>🚂 交通提醒</h3>
+    <div class="tip-item"><span class="tip-icon">🎫</span><span>TRENORD 火車票建議提前在 App 或官網購買，現場機器可能排隊。請保存電子票或列印備用。</span></div>
+    <div class="tip-item"><span class="tip-icon">⛴️</span><span>科莫湖渡船分「直達快船（Hydrofoil）」和「普通慢船（Traghetto）」，速度和票價差異大，請在碼頭仔細確認班次。</span></div>
+    <div class="tip-item"><span class="tip-icon">⚠️</span><span>科莫市有兩個火車站：<strong>Como S. Giovanni</strong>（回米蘭中央站）和 Como Lago（往米蘭 Cadorna），請務必搭對！</span></div>
+    <h3 style="margin-top:18px">👟 裝備與氣候</h3>
+    <div class="tip-item"><span class="tip-icon">🌡️</span><span>8月科莫湖區氣溫約 28–34°C，湖邊有微風涼爽，但坡道步行會出汗，建議帶薄外套（晚間涼爽）。</span></div>
+    <div class="tip-item"><span class="tip-icon">👟</span><span>瓦倫納與貝拉焦都有石板坡道，祖母請務必穿防滑運動鞋，避免拖鞋或高跟鞋。</span></div>
+    <div class="tip-item"><span class="tip-icon">💧</span><span>帶環保水壺，科莫湖區飲用水品質佳，各地廣場多有飲水機可補充。景區內瓶裝水偏貴。</span></div>
+    <h3 style="margin-top:18px">💰 消費提醒</h3>
+    <div class="tip-item"><span class="tip-icon">💶</span><span>科莫湖區為熱門旅遊地，餐廳物價比米蘭市區高約 20–30%，午餐選擇 Mr. Panino 等輕食可節省開支。</span></div>
+    <div class="tip-item"><span class="tip-icon">🧾</span><span>義大利餐廳常加收「座位費（Coperto）」每人約 €1.5–3，點餐前請確認是否有此費用。</span></div>
+  </div>
+</div>
+
+<footer>
+  <p>🇮🇹 義大利家族自助旅遊 2026 ｜ <span>DAY 2 科莫湖一日遊</span></p>
+  <p style="margin-top:6px">Varenna ⛴️ Bellagio ⛴️ Como ｜ 祖母×2 ｜ 父母×2 ｜ 國中生×2</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const wikiImgs = document.querySelectorAll('img.wiki-img[data-wiki]');
+  wikiImgs.forEach(function(img) {
+    const title = img.getAttribute('data-wiki');
+    const fallback = img.getAttribute('data-fallback');
+    const apiUrl = 'https://en.wikipedia.org/w/api.php?action=query&titles='
+      + encodeURIComponent(title)
+      + '&prop=pageimages&piprop=original&pithumbsize=1200&format=json&origin=*';
+    fetch(apiUrl)
+      .then(r => r.json())
+      .then(data => {
+        const pages = data.query.pages;
+        const page = pages[Object.keys(pages)[0]];
+        if (page && page.original && page.original.source) {
+          img.src = page.original.source;
+        } else if (page && page.thumbnail && page.thumbnail.source) {
+          img.src = page.thumbnail.source;
+        }
+      })
+      .catch(() => { img.src = fallback; });
+  });
+});
+</script>
+</body>
+</html>
